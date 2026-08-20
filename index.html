@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avinash Kaur — HR × Business Analytics × AI</title>
+<meta name="description" content="Avinash Kaur — MBA Student building a career at the intersection of people, business, data and technology.">
+
+<!-- ============================================================
+     FONTS
+     Space Grotesk = display / headline face (structured, technical warmth)
+     Inter          = body / UI face (clean, highly legible)
+     JetBrains Mono = data / stat face (used for numbers, labels, tags)
+============================================================ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Skip link for keyboard / screen-reader users -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Ambient background canvas — soft moving grain/field behind everything -->
+<div class="bg-field" aria-hidden="true">
+  <div class="bg-glow bg-glow--1"></div>
+  <div class="bg-glow bg-glow--2"></div>
+  <div class="bg-grid"></div>
+</div>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Avinash Kaur — home">AK<span class="nav__logo-dot">.</span></a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home" class="nav__link active" data-nav>Home</a>
+      <a href="#about" class="nav__link" data-nav>About</a>
+      <a href="#experience" class="nav__link" data-nav>Experience</a>
+      <a href="#projects" class="nav__link" data-nav>Projects</a>
+      <a href="#skills" class="nav__link" data-nav>Skills</a>
+      <a href="#education" class="nav__link" data-nav>Education</a>
+      <a href="#achievements" class="nav__link" data-nav>Achievements</a>
+      <a href="#contact" class="nav__link" data-nav>Contact</a>
+      <span class="nav__indicator" id="navIndicator" aria-hidden="true"></span>
+    </nav>
+
+    <div class="nav__actions">
+      <!-- REPLACE HREF: point this to your uploaded resume file -->
+      <a href="assets/resume/resume.pdf" class="btn btn--ghost btn--sm" download>Résumé</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= MOBILE MENU ================= -->
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+  <nav aria-label="Mobile primary">
+    <a href="#home" data-nav-mobile>Home</a>
+    <a href="#about" data-nav-mobile>About</a>
+    <a href="#experience" data-nav-mobile>Experience</a>
+    <a href="#projects" data-nav-mobile>Projects</a>
+    <a href="#skills" data-nav-mobile>Skills</a>
+    <a href="#education" data-nav-mobile>Education</a>
+    <a href="#achievements" data-nav-mobile>Achievements</a>
+    <a href="#contact" data-nav-mobile>Contact</a>
+  </nav>
+  <a href="assets/resume/resume.pdf" class="btn btn--primary" download>Download Résumé</a>
+</div>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="home">
+    <div class="hero__inner">
+
+      <p class="eyebrow reveal" data-reveal>MBA Student — Human Resources</p>
+
+      <h1 class="hero__name reveal" data-reveal>
+        <span class="hero__name-line">AVINASH</span>
+        <span class="hero__name-line hero__name-line--outline">KAUR</span>
+      </h1>
+
+      <p class="hero__tagline reveal" data-reveal>
+        HR <span class="x">×</span> Business Analytics <span class="x">×</span> AI
+      </p>
+
+      <h2 class="hero__headline reveal" data-reveal>Passion. People. Purpose.</h2>
+
+      <p class="hero__sub reveal" data-reveal>
+        Building a career at the intersection of people, data and technology.
+      </p>
+
+      <div class="hero__cta reveal" data-reveal>
+        <a href="#projects" class="btn btn--primary">Explore My Work</a>
+        <a href="assets/resume/resume.pdf" class="btn btn--outline" download>Download Resume</a>
+      </div>
+
+      <div class="hero__social reveal" data-reveal>
+        <a href="https://linkedin.com/in/avinash-kaur-50aa6228b" target="_blank" rel="noopener" aria-label="LinkedIn profile" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6.94 8.5H3.56V20h3.38V8.5ZM5.25 3.5a1.96 1.96 0 1 0 0 3.92 1.96 1.96 0 0 0 0-3.92ZM20.44 20h-3.37v-5.9c0-1.4-.03-3.2-1.95-3.2-1.96 0-2.26 1.53-2.26 3.1V20H9.5V8.5h3.24v1.57h.05c.45-.85 1.56-1.75 3.21-1.75 3.43 0 4.06 2.26 4.06 5.2V20Z" stroke="currentColor" stroke-width="0.4" fill="currentColor"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:avinashkaur20037@gmail.com" aria-label="Send an email" class="social-link">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3.5 5.5h17a1 1 0 0 1 1 1v11a1 1 0 0 1-1 1h-17a1 1 0 0 1-1-1v-11a1 1 0 0 1 1-1Z" stroke="currentColor" stroke-width="1.4"/><path d="m3 6 9 7 9-7" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span>Email</span>
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub profile — update this link" class="social-link">
+          <!-- REPLACE HREF above with your actual GitHub profile URL -->
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.53 9.53 0 0 1 5 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.74c0 .26.18.58.69.48A10 10 0 0 0 12 2Z" fill="currentColor"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Signature animated element: People → Process → Data → AI → Impact -->
+    <div class="hero__flow reveal" data-reveal aria-hidden="true">
+      <svg viewBox="0 0 1040 160" class="flow-svg" preserveAspectRatio="xMidYMid meet">
+        <line x1="60" y1="80" x2="980" y2="80" class="flow-line" />
+        <line x1="60" y1="80" x2="980" y2="80" class="flow-line flow-line--draw" />
+        <g class="flow-node" style="--i:0" transform="translate(60,80)">
+          <circle r="30" class="flow-dot"></circle>
+          <text y="58" class="flow-label">People</text>
+        </g>
+        <g class="flow-node" style="--i:1" transform="translate(290,80)">
+          <circle r="30" class="flow-dot"></circle>
+          <text y="58" class="flow-label">Process</text>
+        </g>
+        <g class="flow-node" style="--i:2" transform="translate(520,80)">
+          <circle r="30" class="flow-dot"></circle>
+          <text y="58" class="flow-label">Data</text>
+        </g>
+        <g class="flow-node" style="--i:3" transform="translate(750,80)">
+          <circle r="30" class="flow-dot"></circle>
+          <text y="58" class="flow-label">AI</text>
+        </g>
+        <g class="flow-node flow-node--impact" style="--i:4" transform="translate(980,80)">
+          <circle r="34" class="flow-dot flow-dot--impact"></circle>
+          <text y="60" class="flow-label flow-label--impact">Impact</text>
+        </g>
+      </svg>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About section">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+  <section class="about" id="about">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>01 — About</p>
+
+      <div class="about__grid">
+        <div class="about__lede reveal" data-reveal>
+          <h2 class="section-title">
+            Every organization runs on its
+            <span class="hl hl--people">people</span> and its
+            <span class="hl hl--process">processes</span>.
+          </h2>
+        </div>
+
+        <div class="about__body reveal" data-reveal>
+          <p>
+            I'm building a career in Human Resources — combining academic knowledge with hands-on
+            industry experience. Through my internship and projects, I've gained practical exposure
+            to <strong>HR operations</strong>, <strong>payroll support</strong>, <strong>statutory
+            compliance</strong>, and <strong>HR documentation</strong>, while developing strong
+            communication, analytical and teamwork skills.
+          </p>
+          <p>
+            I'm passionate about continuous learning, improving workplace
+            <span class="hl hl--process">processes</span>, and contributing to
+            people-centric solutions that create <span class="hl hl--impact">value</span> —
+            for employees and organizations alike.
+          </p>
+
+          <div class="about__pillars">
+            <span class="pillar">People</span>
+            <span class="pillar">Processes</span>
+            <span class="pillar">Data</span>
+            <span class="pillar">Growth</span>
+            <span class="pillar">Impact</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPERIENCE ================= -->
+  <section class="experience" id="experience">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>02 — Experience</p>
+      <h2 class="section-title reveal" data-reveal>Where I've put it into practice.</h2>
+
+      <div class="exp-card reveal" data-reveal>
+        <div class="exp-card__main">
+          <div class="exp-card__head">
+            <div>
+              <h3 class="exp-card__role">HR Internship</h3>
+              <p class="exp-card__org">Luminous Power Technologies</p>
+            </div>
+            <span class="exp-card__date">June 2026 – July 2026</span>
+          </div>
+
+          <p class="exp-card__area">Role / Area — HR Operations &amp; Compliance</p>
+
+          <ul class="exp-card__list">
+            <li>Supported PF &amp; ESI documentation and statutory compliance.</li>
+            <li>Strengthened HR operations and documentation processes.</li>
+            <li>Reviewed and verified <strong>400+</strong> workers' records.</li>
+            <li>Assisted in payroll support and attendance management.</li>
+            <li>Prepared HR documents, including an Exit Interview Form and SOP.</li>
+          </ul>
+
+          <div class="exp-card__tags">
+            <span>HR Operations</span>
+            <span>Payroll Support</span>
+            <span>HR Documentation</span>
+            <span>Statutory Compliance (PF &amp; ESI)</span>
+            <span>Labour Laws</span>
+          </div>
+        </div>
+
+        <div class="exp-card__stat">
+          <span class="stat-number" data-count="400" data-suffix="+">0</span>
+          <span class="stat-label">Workers' records<br>reviewed &amp; verified</span>
+        </div>
+      </div>
+
+      <!-- IMAGE PLACEHOLDER: Internship photo(s) from Luminous Power Technologies -->
+      <!-- Replace the file at assets/images/internship.jpg with your own photo -->
+      <div class="img-strip reveal" data-reveal>
+        <figure class="img-placeholder img-placeholder--wide" data-img="internship.jpg">
+          <span class="img-placeholder__icon">＋</span>
+          <span class="img-placeholder__label">Add Internship Photo</span>
+          <span class="img-placeholder__hint">assets/images/internship.jpg</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+  <section class="projects" id="projects">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>03 — Projects</p>
+      <h2 class="section-title reveal" data-reveal>Work I'm proud to show.</h2>
+
+      <div class="project-list">
+
+        <!-- PROJECT 01 -->
+        <article class="project-card reveal" data-reveal>
+          <div class="project-card__media">
+            <!-- IMAGE PLACEHOLDER: photo(s) from the Stress Management training session -->
+            <!-- Replace assets/images/hr-project.jpg -->
+            <figure class="img-placeholder" data-img="hr-project.jpg">
+              <span class="img-placeholder__icon">＋</span>
+              <span class="img-placeholder__label">Add HR Project Photo</span>
+              <span class="img-placeholder__hint">assets/images/hr-project.jpg</span>
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__num">01</span>
+            <span class="tag tag--muted">HR / Training &amp; Development</span>
+            <h3>Stress Management &amp; Emotional Well-Being Training</h3>
+            <p>
+              Designed and delivered a training program for Anganwadi workers after conducting a
+              Training Needs Assessment. The session focused on stress management, communication,
+              relaxation techniques, and promoting employee well-being through interactive learning.
+            </p>
+            <ul class="project-card__impact">
+              <li>Increased awareness of stress management</li>
+              <li>Improved emotional well-being among participants through interactive learning</li>
+              <li>Encouraged a healthier workplace</li>
+            </ul>
+            <div class="exp-card__tags">
+              <span>Training Needs Assessment</span>
+              <span>Facilitation</span>
+              <span>Employee Well-Being</span>
+            </div>
+            <!-- No external link provided for this project — button intentionally omitted.
+                 To add one later, uncomment below and set a real URL. -->
+            <!-- <a href="#" class="btn btn--outline btn--sm">View Project</a> -->
+          </div>
+        </article>
+
+        <!-- PROJECT 02 -->
+        <article class="project-card project-card--reverse reveal" data-reveal>
+          <div class="project-card__media">
+            <!-- IMAGE PLACEHOLDER: attendance dashboard screenshots -->
+            <!-- Replace assets/images/golden-oak.jpg -->
+            <figure class="img-placeholder" data-img="golden-oak.jpg">
+              <span class="img-placeholder__icon">＋</span>
+              <span class="img-placeholder__label">Add Golden Oak Dashboard Screenshot</span>
+              <span class="img-placeholder__hint">assets/images/golden-oak.jpg</span>
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__num">02</span>
+            <span class="tag tag--muted">Digital Transformation</span>
+            <h3>Golden Oak Shimla — HR Attendance Application</h3>
+            <p>
+              Analyzed HR attendance processes and collaborated on implementing a digital attendance
+              system to improve workflow efficiency, data accuracy, and overall HR operations. The
+              project also contributed to <strong>₹18,000</strong> in revenue.
+            </p>
+            <div class="mini-dash">
+              <span>Overall Attendance</span>
+              <span>Student Attendance</span>
+              <span>Absent History</span>
+              <span>Working Location</span>
+              <span>Last 6 Months</span>
+              <span>This Session</span>
+            </div>
+            <p class="project-card__impact-line">Improved attendance tracking efficiency and data management accuracy.</p>
+          </div>
+        </article>
+
+        <!-- PROJECT 03 -->
+        <article class="project-card reveal" data-reveal>
+          <div class="project-card__media">
+            <!-- IMAGE PLACEHOLDER: Dastaan brand / product photos -->
+            <!-- Replace assets/images/dastaan.jpg -->
+            <figure class="img-placeholder" data-img="dastaan.jpg">
+              <span class="img-placeholder__icon">＋</span>
+              <span class="img-placeholder__label">Add Dastaan Project Images</span>
+              <span class="img-placeholder__hint">assets/images/dastaan.jpg</span>
+            </figure>
+          </div>
+          <div class="project-card__body">
+            <span class="project-card__num">03</span>
+            <span class="tag tag--muted">Personal Brand / Entrepreneurship</span>
+            <h3>Dastaan — Tale Woven in Threads</h3>
+            <p>
+              Co-founded a traditional Himachali apparel brand, managing customer relationships,
+              business operations, and sales planning. The project successfully generated
+              <strong>₹90,000+</strong> in revenue while strengthening leadership and business
+              management skills.
+            </p>
+            <div class="exp-card__tags">
+              <span>Customer Relationships</span>
+              <span>Business Operations</span>
+              <span>Sales Planning</span>
+              <span>Leadership</span>
+              <span>Business Management</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SKILLS ================= -->
+  <section class="skills" id="skills">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>04 — Skills</p>
+      <h2 class="section-title reveal" data-reveal>What I bring to the table.</h2>
+
+      <div class="skills__tabs reveal" data-reveal role="tablist" aria-label="Skill categories">
+        <button class="skills__tab active" role="tab" aria-selected="true" data-tab="technical">Technical</button>
+        <button class="skills__tab" role="tab" aria-selected="false" data-tab="soft">Soft Skills</button>
+      </div>
+
+      <div class="skills__panel reveal" data-reveal>
+        <ul class="skills__pillgrid" data-panel="technical">
+          <li class="pill">MS Excel</li>
+          <li class="pill">MS Word</li>
+          <li class="pill">Tally ERP 9</li>
+          <li class="pill">MS PowerPoint</li>
+          <li class="pill">Desktop Publishing</li>
+        </ul>
+        <ul class="skills__pillgrid" data-panel="soft" hidden>
+          <li class="pill">Team Coordination</li>
+          <li class="pill">Empathy</li>
+          <li class="pill">Time Management</li>
+          <li class="pill">Observant</li>
+          <li class="pill">Responsible</li>
+        </ul>
+      </div>
+
+      <div class="interests reveal" data-reveal>
+        <p class="interests__label">Professional interests</p>
+        <div class="interests__cloud">
+          <span style="--d:0">HR</span>
+          <span style="--d:1">Business Analytics</span>
+          <span style="--d:2">AI</span>
+          <span style="--d:3">Digital Transformation</span>
+          <span style="--d:4">People &amp; Processes</span>
+        </div>
+      </div>
+
+      <!-- IMAGE PLACEHOLDER: any Power BI / analytics dashboard screenshots you'd like to showcase -->
+      <!-- Replace assets/images/powerbi.jpg -->
+      <div class="img-strip reveal" data-reveal>
+        <figure class="img-placeholder img-placeholder--wide" data-img="powerbi.jpg">
+          <span class="img-placeholder__icon">＋</span>
+          <span class="img-placeholder__label">Add Power BI / Analytics Screenshot</span>
+          <span class="img-placeholder__hint">assets/images/powerbi.jpg</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EDUCATION ================= -->
+  <section class="education" id="education">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>05 — Education</p>
+      <h2 class="section-title reveal" data-reveal>The academic foundation.</h2>
+
+      <div class="timeline">
+        <div class="timeline__item reveal" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2025 – Present</span>
+            <h3>Master of Business Administration (MBA)</h3>
+            <p class="timeline__org">Lovely Professional University, Punjab</p>
+            <p class="timeline__spec">Specialization — Human Resources &amp; Sales and Marketing</p>
+            <div class="cgpa-chip"><span>CGPA</span><strong>8.08</strong></div>
+          </div>
+        </div>
+
+        <div class="timeline__item reveal" data-reveal>
+          <div class="timeline__dot"></div>
+          <div class="timeline__card">
+            <span class="timeline__date">2021 – 2024</span>
+            <h3>Bachelor of Commerce (B.Com)</h3>
+            <p class="timeline__org">Maharana Pratap Govt. Degree College, Himachal Pradesh</p>
+            <div class="cgpa-chip"><span>CGPA</span><strong>7.40</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACHIEVEMENTS ================= -->
+  <section class="achievements" id="achievements">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>06 — Achievements</p>
+      <h2 class="section-title reveal" data-reveal>Moments worth mentioning.</h2>
+
+      <div class="ach-grid">
+        <article class="ach-card reveal" data-reveal>
+          <span class="ach-card__num">02<sup>nd</sup></span>
+          <h3>Pitch Perfect 2.0 Competition</h3>
+          <p>
+            Secured 2nd place in a university-level business competition by presenting an
+            innovative solution to a societal problem — showcasing creativity, teamwork and
+            presentation skills.
+          </p>
+          <!-- IMAGE PLACEHOLDER: Pitch Perfect 2.0 achievement photo -->
+          <!-- Replace assets/images/pitch-perfect.jpg -->
+          <figure class="img-placeholder img-placeholder--sm" data-img="pitch-perfect.jpg">
+            <span class="img-placeholder__icon">＋</span>
+            <span class="img-placeholder__label">Add Achievement Photo</span>
+            <span class="img-placeholder__hint">assets/images/pitch-perfect.jpg</span>
+          </figure>
+        </article>
+
+        <article class="ach-card reveal" data-reveal>
+          <span class="ach-card__num">02<sup>nd</sup></span>
+          <h3>Acting &amp; Mime — 2nd Prize</h3>
+          <p>
+            Awarded 2nd prize for delivering a mime performance inspired by Incredible India,
+            demonstrating creativity, confidence and stage presence.
+          </p>
+          <!-- IMAGE PLACEHOLDER: Acting & Mime achievement photo -->
+          <!-- Replace assets/images/mime.jpg -->
+          <figure class="img-placeholder img-placeholder--sm" data-img="mime.jpg">
+            <span class="img-placeholder__icon">＋</span>
+            <span class="img-placeholder__label">Add Achievement Photo</span>
+            <span class="img-placeholder__hint">assets/images/mime.jpg</span>
+          </figure>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CERTIFICATIONS ================= -->
+  <section class="certifications" id="certifications">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>07 — Certifications</p>
+      <h2 class="section-title reveal" data-reveal>Credentials, as they come in.</h2>
+      <p class="section-note reveal" data-reveal>
+        Certificate details below are placeholders — titles, issuers and years will be added as
+        certificates are uploaded.
+      </p>
+
+      <div class="cert-grid">
+        <!-- CERTIFICATE CARD 1 — update title / issuer / year, replace certificate1.jpg -->
+        <article class="cert-card reveal" data-reveal>
+          <figure class="img-placeholder img-placeholder--cert" data-img="certificate1.jpg">
+            <span class="img-placeholder__icon">＋</span>
+            <span class="img-placeholder__label">Add Certificate</span>
+            <span class="img-placeholder__hint">assets/certificates/certificate1.jpg</span>
+          </figure>
+          <div class="cert-card__body">
+            <h3 class="cert-card__title">Certificate title — to be added</h3>
+            <p class="cert-card__meta">Issuing organization — TBD &nbsp;·&nbsp; Year — TBD</p>
+            <a href="assets/certificates/certificate1.jpg" class="btn btn--outline btn--sm" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+        <!-- CERTIFICATE CARD 2 — update title / issuer / year, replace certificate2.jpg -->
+        <article class="cert-card reveal" data-reveal>
+          <figure class="img-placeholder img-placeholder--cert" data-img="certificate2.jpg">
+            <span class="img-placeholder__icon">＋</span>
+            <span class="img-placeholder__label">Add Certificate</span>
+            <span class="img-placeholder__hint">assets/certificates/certificate2.jpg</span>
+          </figure>
+          <div class="cert-card__body">
+            <h3 class="cert-card__title">Certificate title — to be added</h3>
+            <p class="cert-card__meta">Issuing organization — TBD &nbsp;·&nbsp; Year — TBD</p>
+            <a href="assets/certificates/certificate2.jpg" class="btn btn--outline btn--sm" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+
+        <!-- CERTIFICATE CARD 3 — update title / issuer / year, replace certificate3.jpg -->
+        <article class="cert-card reveal" data-reveal>
+          <figure class="img-placeholder img-placeholder--cert" data-img="certificate3.jpg">
+            <span class="img-placeholder__icon">＋</span>
+            <span class="img-placeholder__label">Add Certificate</span>
+            <span class="img-placeholder__hint">assets/certificates/certificate3.jpg</span>
+          </figure>
+          <div class="cert-card__body">
+            <h3 class="cert-card__title">Certificate title — to be added</h3>
+            <p class="cert-card__meta">Issuing organization — TBD &nbsp;·&nbsp; Year — TBD</p>
+            <a href="assets/certificates/certificate3.jpg" class="btn btn--outline btn--sm" target="_blank" rel="noopener">View Certificate</a>
+          </div>
+        </article>
+      </div>
+      <p class="cert-add-note reveal" data-reveal>To add more certificates later, duplicate a <code>.cert-card</code> block in index.html and drop a new image into <code>assets/certificates/</code>.</p>
+    </div>
+  </section>
+
+  <!-- ================= BRAND / TYPOGRAPHIC SECTION ================= -->
+  <section class="brand-type" id="brand">
+    <div class="section-inner brand-type__inner">
+      <p class="brand-type__row reveal" data-reveal>
+        <span>Passion.</span><span>People.</span><span>Purpose.</span>
+      </p>
+      <p class="brand-type__row brand-type__row--muted reveal" data-reveal>
+        <span>People.</span><span>Values.</span><span>Process.</span>
+      </p>
+      <p class="brand-type__row reveal" data-reveal>
+        <span>Focused.</span><span>Driven.</span><span>Oriented.</span>
+      </p>
+      <p class="brand-type__growth reveal" data-reveal>Growth mindset.</p>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="section-inner">
+      <p class="eyebrow reveal" data-reveal>08 — Contact</p>
+      <h2 class="contact__heading reveal" data-reveal>Let's Connect.</h2>
+      <p class="contact__sub reveal" data-reveal>
+        Open to learning, collaboration, internships and opportunities where people, business
+        and technology come together.
+      </p>
+
+      <div class="contact__grid">
+        <div class="contact__details reveal" data-reveal>
+          <a class="contact__row" href="tel:9015280271">
+            <span class="contact__row-label">Phone</span>
+            <span class="contact__row-value">9015280271</span>
+          </a>
+          <a class="contact__row" href="mailto:avinashkaur20037@gmail.com">
+            <span class="contact__row-label">Email</span>
+            <span class="contact__row-value">avinashkaur20037@gmail.com</span>
+          </a>
+          <a class="contact__row" href="https://linkedin.com/in/avinash-kaur-50aa6228b" target="_blank" rel="noopener">
+            <span class="contact__row-label">LinkedIn</span>
+            <span class="contact__row-value">linkedin.com/in/avinash-kaur-50aa6228b</span>
+          </a>
+
+          <div class="contact__cta">
+            <a href="mailto:avinashkaur20037@gmail.com" class="btn btn--primary">Email Me</a>
+            <a href="https://linkedin.com/in/avinash-kaur-50aa6228b" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
+          </div>
+        </div>
+
+        <!-- Contact form: front-end only, works with no backend.
+             It opens the visitor's email client pre-filled with their message via a mailto: link.
+             To wire this to a real backend/service later, replace handleContactSubmit in script.js. -->
+        <form class="contact__form reveal" data-reveal id="contactForm" novalidate>
+          <div class="field">
+            <label for="cf-name">Name</label>
+            <input type="text" id="cf-name" name="name" required autocomplete="name">
+          </div>
+          <div class="field">
+            <label for="cf-email">Email</label>
+            <input type="email" id="cf-email" name="email" required autocomplete="email">
+          </div>
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--block">Send Message</button>
+          <p class="field__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="section-inner footer__inner">
+    <span>© <span id="year"></span> Avinash Kaur</span>
+    <span class="footer__tag">HR × Business Analytics × AI</span>
+    <a href="#home" class="footer__top">Back to top ↑</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
