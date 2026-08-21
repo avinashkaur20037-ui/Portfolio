@@ -221,57 +221,183 @@
   </section>
 
   <!-- ================= EXPERIENCE ================= -->
-  <section class="experience" id="experience">
-    <div class="section-inner">
       <p class="eyebrow reveal" data-reveal>02 — Experience</p>
       <h2 class="section-title reveal" data-reveal>Where I've put it into practice.</h2>
+                 <!-- ================= INTERNSHIP EXPERIENCE ================= -->
 
-      <div class="exp-card reveal" data-reveal>
-        <div class="exp-card__main">
-          <div class="exp-card__head">
-            <div>
-              <h3 class="exp-card__role">HR Internship</h3>
-              <p class="exp-card__org">Luminous Power Technologies</p>
+<section class="internship-section" id="experience">
+
+    <div class="internship-container">
+
+        <!-- LEFT: COMPANY IMAGE -->
+        <div class="internship-visual">
+
+            <div class="internship-label">
+                INTERNSHIP EXPERIENCE
             </div>
-            <span class="exp-card__date">June 2026 – July 2026</span>
-          </div>
 
-          <p class="exp-card__area">Role / Area — HR Operations &amp; Compliance</p>
+            <div class="company-image-wrap">
+                <img src="internship.jpeg" alt="Luminous Power Technologies Internship">
+                
+                <div class="image-overlay">
+                    <span>MY INTERNSHIP</span>
+                </div>
+            </div>
 
-          <ul class="exp-card__list">
-            <li>Supported PF &amp; ESI documentation and statutory compliance.</li>
-            <li>Strengthened HR operations and documentation processes.</li>
-            <li>Reviewed and verified <strong>400+</strong> workers' records.</li>
-            <li>Assisted in payroll support and attendance management.</li>
-            <li>Prepared HR documents, including an Exit Interview Form and SOP.</li>
-          </ul>
+            <div class="company-name">
+                <span>at</span>
+                <h2>LUMINOUS</h2>
+                <p>POWER TECHNOLOGIES</p>
+            </div>
 
-          <div class="exp-card__tags">
-            <span>HR Operations</span>
-            <span>Payroll Support</span>
-            <span>HR Documentation</span>
-            <span>Statutory Compliance (PF &amp; ESI)</span>
-            <span>Labour Laws</span>
-          </div>
         </div>
 
-        <div class="exp-card__stat">
-          <span class="stat-number" data-count="400" data-suffix="+">0</span>
-          <span class="stat-label">Workers' records<br>reviewed &amp; verified</span>
-        </div>
-      </div>
 
-      <!-- IMAGE PLACEHOLDER: Internship photo(s) from Luminous Power Technologies -->
-      <!-- Replace the file at assets/images/internship.jpg with your own photo -->
-      <div class="img-strip reveal" data-reveal>
-        <figure class="img-placeholder img-placeholder--wide" data-img="internship.jpg">
-          <span class="img-placeholder__icon">＋</span>
-          <span class="img-placeholder__label">Add Internship Photo</span>
-          <span class="img-placeholder__hint">assets/images/internship.jpg</span>
-        </figure>
-      </div>
+        <!-- RIGHT: INTERACTIVE WORK -->
+        <div class="internship-content">
+
+            <div class="internship-top">
+
+                <div>
+                    <p class="small-heading">WHAT I WORKED ON</p>
+                    <h2>HR Operations &amp;<br>Compliance</h2>
+                </div>
+
+                <div class="internship-date">
+                    June 2026 — July 2026
+                </div>
+
+            </div>
+
+
+            <!-- VISUAL ICONS -->
+
+            <div class="work-icons">
+
+                <!-- 1 -->
+                <button class="work-card" onclick="openInternshipPopup('payroll')">
+
+                    <div class="work-icon">
+                        <span>₹</span>
+                    </div>
+
+                    <div class="work-card-line"></div>
+
+                    <p>Payroll</p>
+
+                </button>
+
+
+                <!-- 2 -->
+                <button class="work-card" onclick="openInternshipPopup('documents')">
+
+                    <div class="work-icon">
+                        <span>▤</span>
+                    </div>
+
+                    <div class="work-card-line"></div>
+
+                    <p>HR Documents</p>
+
+                </button>
+
+
+                <!-- 3 -->
+                <button class="work-card" onclick="openInternshipPopup('compliance')">
+
+                    <div class="work-icon">
+                        <span>✓</span>
+                    </div>
+
+                    <div class="work-card-line"></div>
+
+                    <p>Compliance</p>
+
+                </button>
+
+
+                <!-- 4 -->
+                <button class="work-card" onclick="openInternshipPopup('attendance')">
+
+                    <div class="work-icon">
+                        <span>◷</span>
+                    </div>
+
+                    <div class="work-card-line"></div>
+
+                    <p>Attendance</p>
+
+                </button>
+
+
+                <!-- 5 -->
+                <button class="work-card" onclick="openInternshipPopup('records')">
+
+                    <div class="work-icon">
+                        <span>♙</span>
+                    </div>
+
+                    <div class="work-card-line"></div>
+
+                    <p>Employee Records</p>
+
+                </button>
+
+            </div>
+
+
+            <!-- BOTTOM VISUAL -->
+            <div class="internship-impact">
+
+                <div class="impact-line"></div>
+
+                <div class="impact-item">
+                    <strong>400+</strong>
+                    <span>Workers' records<br>reviewed &amp; verified</span>
+                </div>
+
+                <div class="impact-item">
+                    <strong>HR</strong>
+                    <span>Operations<br>&amp; Compliance</span>
+                </div>
+
+                <div class="impact-item">
+                    <strong>45</strong>
+                    <span>Days of<br>experience</span>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
-  </section>
+
+
+    <!-- POPUP -->
+
+    <div class="internship-popup" id="internshipPopup">
+
+        <div class="popup-box">
+
+            <button class="popup-close" onclick="closeInternshipPopup()">×</button>
+
+            <div class="popup-icon" id="popupIcon">₹</div>
+
+            <p class="popup-label">INTERNSHIP EXPERIENCE</p>
+
+            <h3 id="popupTitle">Payroll Support</h3>
+
+            <p id="popupText">
+                Assisted with payroll-related HR activities and employee records.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ================= END INTERNSHIP ================= -->
 
   <!-- ================= PROJECTS ================= -->
   <section class="projects" id="projects">
