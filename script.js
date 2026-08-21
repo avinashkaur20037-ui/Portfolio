@@ -230,3 +230,96 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+/* =====================================================
+   INTERNSHIP POPUPS
+===================================================== */
+
+const internshipData = {
+
+    payroll: {
+        icon: "₹",
+        title: "Payroll Support",
+        text: "Assisted with payroll-related HR activities, employee attendance information and documentation required for salary processing."
+    },
+
+    documents: {
+        icon: "▤",
+        title: "HR Documentation",
+        text: "Prepared and maintained HR documents, including employee records, an Exit Interview Form and an SOP."
+    },
+
+    compliance: {
+        icon: "✓",
+        title: "Statutory Compliance",
+        text: "Learned and supported HR compliance activities related to PF, ESI, labour laws and statutory requirements."
+    },
+
+    attendance: {
+        icon: "◷",
+        title: "Attendance Management",
+        text: "Worked with attendance and leave-related records and supported the maintenance of HR registers."
+    },
+
+    records: {
+        icon: "♙",
+        title: "Employee Records",
+        text: "Reviewed and verified records of 400+ workers and helped identify and correct employee information in HR records."
+    }
+
+};
+
+
+function openInternshipPopup(type) {
+
+    const data = internshipData[type];
+
+    if (!data) return;
+
+    document.getElementById("popupIcon").textContent = data.icon;
+
+    document.getElementById("popupTitle").textContent = data.title;
+
+    document.getElementById("popupText").textContent = data.text;
+
+    document
+        .getElementById("internshipPopup")
+        .classList.add("active");
+
+}
+
+
+function closeInternshipPopup() {
+
+    document
+        .getElementById("internshipPopup")
+        .classList.remove("active");
+
+}
+
+
+/* Close popup when clicking outside */
+
+document
+    .getElementById("internshipPopup")
+    ?.addEventListener("click", function(event) {
+
+        if (event.target === this) {
+
+            closeInternshipPopup();
+
+        }
+
+    });
+
+
+/* Close popup with ESC */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+
+        closeInternshipPopup();
+
+    }
+
+});
