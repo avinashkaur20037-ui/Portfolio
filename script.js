@@ -329,165 +329,169 @@ document.addEventListener("keydown", function(event) {
 // PROJECT FLASHCARD POPUP CONTENT
 // ==========================================
 
-const projectFlashcards = {
+   /* =========================================================
+   PROJECT FLASHCARD POPUPS
+========================================================= */
 
-    // ==========================================
-    // DASTAAN — BRAND BUILDING PROJECT
-    // ==========================================
+const projectCardData = {
 
-    "dastaan-idea": {
-        title: "🌱 THE IDEA",
-        text: "Dastaan was created to bring traditional Himachali apparel into a modern market while preserving its cultural identity, craftsmanship and local roots."
-    },
+  /* ================= DASTAAN ================= */
 
-    "dastaan-role": {
-        title: "👥 MY ROLE",
-        text: "As a Co-Founder, I contributed to brand building, team coordination, customer engagement, sales handling and business planning."
-    },
+  "dastaan-idea": {
+    icon: "🌱",
+    label: "DASTAAN · THE IDEA",
+    title: "Traditional roots, modern direction.",
+    text:
+      "Dastaan was created around the idea of taking authentic Himachali apparel and presenting it as a contemporary brand for modern customers."
+  },
 
-    "dastaan-journey": {
-        title: "🧩 THE JOURNEY",
-        text: "The project evolved from an initial idea into a real business experience through branding, teamwork, customer interaction, sales and continuous planning."
-    },
+  "dastaan-role": {
+    icon: "👥",
+    label: "DASTAAN · MY ROLE",
+    title: "More than just a brand idea.",
+    text:
+      "I worked as a Co-Founder and contributed to brand building, team coordination, customer engagement, sales and business planning."
+  },
 
-    "dastaan-stakeholders": {
-        title: "🤝 STAKEHOLDER RELATIONSHIPS",
-        text: "I worked on building positive relationships with customers, team members and other stakeholders while understanding their needs and expectations."
-    },
+  "dastaan-sales": {
+    icon: "📈",
+    label: "DASTAAN · SALES",
+    title: "The idea became revenue.",
+    text:
+      "The project generated ₹1,00,000+ in revenue through customer engagement, sales handling and business planning."
+  },
 
-    "dastaan-team": {
-        title: "👥 TEAM ACTIVITIES",
-        text: "Working with the team helped transform the initial concept into a functioning brand through coordination, shared responsibilities and collaborative decision-making."
-    },
-
-    "dastaan-customer": {
-        title: "💬 CUSTOMER ENGAGEMENT",
-        text: "Customer interaction helped us understand preferences, communicate the value of Himachali products and build stronger connections with our target audience."
-    },
-
-    "dastaan-sales": {
-        title: "📈 SALES HANDLING",
-        text: "I gained practical experience in sales planning, customer interaction and converting interest into actual purchases while managing the business journey."
-    },
-
-    "dastaan-business": {
-        title: "📊 BUSINESS PLANNING",
-        text: "The project involved planning around branding, customers, sales and business operations, giving me hands-on exposure to entrepreneurship and management."
-    },
-
-    "dastaan-impact": {
-        title: "💰 THE IMPACT",
-        text: "Dastaan generated ₹1,00,000+ in sales, turning a traditional-product idea into a real business experience and strengthening my skills in entrepreneurship and business management."
-    },
-
-    "dastaan-vocal": {
-        title: "🇮🇳 VOCAL FOR LOCAL",
-        text: "The project supported the Vocal for Local movement by promoting authentic Himachali products and helping connect local craftsmanship with modern customers."
-    },
+  "dastaan-vocal": {
+    icon: "🇮🇳",
+    label: "DASTAAN · VOCAL FOR LOCAL",
+    title: "Keeping local craftsmanship visible.",
+    text:
+      "Dastaan supported the Vocal for Local movement by promoting authentic Himachali products and giving traditional craftsmanship a modern platform."
+  },
 
 
-    // ==========================================
-    // STRESS MANAGEMENT & EMPLOYEE WELL-BEING
-    // ==========================================
+  /* ================= STRESS ================= */
 
-    "stress-identify": {
-        title: "🔍 STEP 01 — IDENTIFY",
-        text: "I began by conducting a Training Needs Assessment with 10+ Anganwadi workers to understand the challenges they were facing in their work environment."
-    },
+  "stress-tna": {
+    icon: "🔎",
+    label: "STRESS MANAGEMENT · IDENTIFY",
+    title: "Start with the people.",
+    text:
+      "I conducted a Training Needs Assessment involving 10+ Anganwadi workers to understand workplace challenges and identify areas where training could help."
+  },
 
-    "stress-understand": {
-        title: "🧠 STEP 02 — UNDERSTAND",
-        text: "The assessment helped identify stress-related challenges, communication concerns and the specific areas where practical employee well-being support was needed."
-    },
+  "stress-design": {
+    icon: "🎯",
+    label: "STRESS MANAGEMENT · DESIGN",
+    title: "Turning needs into a program.",
+    text:
+      "The findings were used to design a Stress Management and Employee Well-Being program focused on practical and relevant workplace support."
+  },
 
-    "stress-design": {
-        title: "🎯 STEP 03 — DESIGN",
-        text: "Based on the findings, I designed a Stress Management and Employee Well-Being training program focused on practical and easy-to-apply techniques."
-    },
+  "stress-delivery": {
+    icon: "🎲",
+    label: "STRESS MANAGEMENT · DELIVERY",
+    title: "Learning through interaction.",
+    text:
+      "The session used interactive activities and practical coping techniques so participants could connect the concepts with their everyday experiences."
+  },
 
-    "stress-deliver": {
-        title: "🎲 STEP 04 — DELIVER",
-        text: "The training used interactive activities, practical coping techniques and communication-focused learning to make the session engaging and useful for the participants."
-    },
-
-    "stress-impact": {
-        title: "📈 THE IMPACT",
-        text: "The initiative engaged 10+ Anganwadi workers and created awareness around stress management, communication, coping strategies and workplace well-being."
-    },
-
-    "stress-tna": {
-        title: "📋 TRAINING NEEDS ASSESSMENT",
-        text: "The TNA provided the foundation for the project by identifying the actual training requirements instead of assuming what employees needed."
-    },
-
-    "stress-engagement": {
-        title: "👥 EMPLOYEE ENGAGEMENT",
-        text: "Interactive learning activities encouraged participants to actively take part in the session and connect the concepts with their own workplace experiences."
-    },
-
-    "stress-facilitation": {
-        title: "🎤 FACILITATION",
-        text: "The session required planning and facilitating learning activities in a simple, practical format so that participants could easily understand and apply the concepts."
-    },
-
-    "stress-communication": {
-        title: "💬 COMMUNICATION",
-        text: "Communication was included as an important part of the training because effective communication can support healthier workplace relationships and reduce workplace stress."
-    },
-
-    "stress-wellbeing": {
-        title: "💚 WORKPLACE WELL-BEING",
-        text: "The overall focus was to promote healthier ways of managing stress while encouraging emotional well-being and practical coping strategies."
-    },
+  "stress-impact": {
+    icon: "💬",
+    label: "STRESS MANAGEMENT · IMPACT",
+    title: "Well-being at the centre.",
+    text:
+      "The project focused on improving awareness of stress management, communication, employee engagement and overall workplace well-being."
+  },
 
 
-    // ==========================================
-    // GOLDEN OAK SHIMLA — HR ATTENDANCE APP
-    // ==========================================
+  /* ================= ATTENDANCE APP ================= */
 
-    "attendance-problem": {
-        title: "⚠️ THE PROBLEM",
-        text: "The project focused on the challenges of managing attendance through manual and inefficient processes, which can make HR tracking and record management more difficult."
-    },
+  "app-problem": {
+    icon: "⚠️",
+    label: "HR ATTENDANCE APP · PROBLEM",
+    title: "A manual process needed a better way.",
+    text:
+      "The project started by looking at attendance management and the inefficiencies involved in maintaining and handling attendance information manually."
+  },
 
-    "attendance-analyze": {
-        title: "🔎 WHAT I ANALYZED",
-        text: "I looked at HR operations, attendance requirements and existing workflows to understand where a digital solution could improve efficiency and data management."
-    },
+  "app-analysis": {
+    icon: "🔍",
+    label: "HR ATTENDANCE APP · ANALYSIS",
+    title: "Understand the workflow first.",
+    text:
+      "I analyzed HR operations, attendance requirements and workflows to understand how a digital solution could make the process more efficient."
+  },
 
-    "attendance-solution": {
-        title: "💻 THE SOLUTION",
-        text: "The project developed a digital attendance management solution designed to simplify attendance tracking, organize records and support smoother HR operations."
-    },
+  "app-solution": {
+    icon: "💻",
+    label: "HR ATTENDANCE APP · SOLUTION",
+    title: "An HR process became a digital product.",
+    text:
+      "The outcome was a digital attendance management application designed to make attendance tracking and data management easier."
+  },
 
-    "attendance-impact": {
-        title: "⚡ THE IMPACT",
-        text: "The solution helped improve the efficiency of attendance tracking, data management and overall accuracy while supporting a more organized HR workflow."
-    },
-
-    "attendance-efficiency": {
-        title: "⚙️ OPERATIONAL EFFICIENCY",
-        text: "Moving attendance processes toward a digital system helped create a more structured workflow and reduced dependence on inefficient manual handling."
-    },
-
-    "attendance-data": {
-        title: "📊 DATA MANAGEMENT",
-        text: "A digital approach made attendance information easier to organize and manage, supporting better access to HR records and employee attendance data."
-    },
-
-    "attendance-accuracy": {
-        title: "🎯 ATTENDANCE ACCURACY",
-        text: "The system was designed to make attendance records more organized and accurate, helping HR teams work with cleaner and more reliable information."
-    },
-
-    "attendance-digital": {
-        title: "🚀 DIGITAL TRANSFORMATION",
-        text: "The project demonstrated how an everyday HR process can be converted into a digital workflow to improve efficiency and simplify administrative work."
-    },
-
-    "attendance-sale": {
-        title: "💰 THE RESULT",
-        text: "The HR Attendance App was successfully sold for ₹18,000, turning the project from an academic concept into a practical digital solution with commercial value."
-    }
+  "app-result": {
+    icon: "💰",
+    label: "HR ATTENDANCE APP · RESULT",
+    title: "A project with a real commercial outcome.",
+    text:
+      "The HR attendance application was successfully sold for ₹18,000, turning the project from a concept into a real digital solution."
+  }
 
 };
+
+
+/* OPEN POPUP */
+
+function openProjectCard(cardId) {
+
+  const card = projectCardData[cardId];
+
+  if (!card) return;
+
+  const popup = document.getElementById("projectPopup");
+
+  document.getElementById("popupIcon").textContent = card.icon;
+
+  document.getElementById("popupLabel").textContent = card.label;
+
+  document.getElementById("popupTitle").textContent = card.title;
+
+  document.getElementById("popupText").textContent = card.text;
+
+  popup.classList.add("active");
+
+  popup.setAttribute("aria-hidden", "false");
+
+  document.body.classList.add("project-popup-open");
+
+}
+
+
+/* CLOSE POPUP */
+
+function closeProjectCard() {
+
+  const popup = document.getElementById("projectPopup");
+
+  popup.classList.remove("active");
+
+  popup.setAttribute("aria-hidden", "true");
+
+  document.body.classList.remove("project-popup-open");
+
+}
+
+
+/* ESC KEY */
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "Escape") {
+
+    closeProjectCard();
+
+  }
+
+});
