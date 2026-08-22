@@ -495,3 +495,129 @@ document.addEventListener("keydown", function(event) {
   }
 
 });
+/* =====================================================
+   PROJECT POPUPS
+   ===================================================== */
+
+const projectInformation = {
+
+    dastaan: {
+
+        label: "DASTAAN • BRAND BUILDING",
+
+        title: "Building a traditional brand into a modern business.",
+
+        description:
+        "Dastaan was created to bring authentic Himachali apparel to modern customers through branding, customer engagement and business planning. The project generated ₹1,00,000+ in revenue and also supported the Vocal for Local movement.",
+
+        role:
+        "Co-Founder",
+
+        approach:
+        "Branding • Team Coordination • Customer Engagement • Sales",
+
+        impact:
+        "₹1,00,000+ Revenue"
+    },
+
+
+    wellbeing: {
+
+        label: "HR • EMPLOYEE WELL-BEING",
+
+        title: "From identifying stress to designing training.",
+
+        description:
+        "I conducted a Training Needs Assessment with 10+ Anganwadi workers to understand stress-related workplace challenges and used the findings to design an employee well-being and stress-management program.",
+
+        role:
+        "Training & Development",
+
+        approach:
+        "TNA • Facilitation • Communication • Training Design",
+
+        impact:
+        "10+ Workers Engaged"
+    },
+
+
+    attendance: {
+
+        label: "HR • DIGITAL SOLUTION",
+
+        title: "Turning an HR process into a digital solution.",
+
+        description:
+        "I developed a digital attendance management solution to simplify manual HR attendance processes, improve data handling and support more efficient workforce management.",
+
+        role:
+        "HR Solution Developer",
+
+        approach:
+        "HR Operations • Attendance • Digital Workflow",
+
+        impact:
+        "₹18,000 App Sold"
+    }
+
+};
+
+
+/* ---------- OPEN ---------- */
+
+function openProject(projectName) {
+
+    const project = projectInformation[projectName];
+
+    if (!project) return;
+
+    document.getElementById("modalLabel").textContent =
+        project.label;
+
+    document.getElementById("modalTitle").textContent =
+        project.title;
+
+    document.getElementById("modalDescription").textContent =
+        project.description;
+
+    document.getElementById("modalRole").textContent =
+        project.role;
+
+    document.getElementById("modalApproach").textContent =
+        project.approach;
+
+    document.getElementById("modalImpact").textContent =
+        project.impact;
+
+
+    document
+        .getElementById("projectModal")
+        .classList
+        .add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+/* ---------- CLOSE ---------- */
+
+function closeProject() {
+
+    document
+        .getElementById("projectModal")
+        .classList
+        .remove("active");
+
+    document.body.style.overflow = "";
+}
+
+
+/* ---------- ESC KEY ---------- */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeProject();
+    }
+
+});
