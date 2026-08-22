@@ -1716,3 +1716,456 @@ p{ margin:0; }
     }
 
 }
+/* =========================================================
+   CREATIVE PROJECTS — MODERN PORTFOLIO STYLE
+   ========================================================= */
+
+.creative-projects {
+    position: relative;
+    padding: 120px 6vw;
+    overflow: hidden;
+}
+
+.creative-projects::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -250px;
+    top: 250px;
+    background: rgba(214, 145, 35, 0.08);
+    filter: blur(100px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.creative-projects-header {
+    max-width: 850px;
+    margin-bottom: 90px;
+}
+
+.project-eyebrow {
+    color: #e9a52c;
+    font-family: monospace;
+    font-size: 14px;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+.creative-projects-header h2 {
+    font-size: clamp(45px, 6vw, 82px);
+    line-height: 0.98;
+    margin: 0 0 25px;
+    font-weight: 700;
+}
+
+.project-intro {
+    max-width: 520px;
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ================= PROJECT CARD ================= */
+
+.creative-project {
+    position: relative;
+    min-height: 620px;
+    margin-bottom: 100px;
+    padding: 70px;
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 35px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,0.045),
+            rgba(255,255,255,0.015)
+        );
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: 70px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.creative-project::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -150px;
+    bottom: -150px;
+    background: rgba(28, 181, 177, 0.07);
+    filter: blur(80px);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.project-number {
+    position: absolute;
+    top: 35px;
+    left: 40px;
+    color: #e9a52c;
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+}
+
+
+/* ================= VISUAL AREA ================= */
+
+.project-visuals {
+    position: relative;
+    height: 450px;
+}
+
+.project-visuals img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* ================= DASTAAN ================= */
+
+.project-dastaan .project-visuals {
+    min-height: 470px;
+}
+
+.dastaan-main-image {
+    position: absolute;
+    width: 68%;
+    height: 390px;
+    left: 0;
+    top: 35px;
+    border-radius: 25px;
+    overflow: hidden;
+    transform: rotate(-4deg);
+    border: 1px solid rgba(233,165,44,0.4);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.4);
+}
+
+.dastaan-small-image {
+    position: absolute;
+    width: 42%;
+    height: 230px;
+    right: 0;
+    top: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(5deg);
+    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.dastaan-third-image {
+    position: absolute;
+    width: 38%;
+    height: 210px;
+    right: 8%;
+    bottom: 0;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(-3deg);
+    border: 1px solid rgba(28,181,177,0.4);
+}
+
+.visual-label {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    padding: 10px 16px;
+    border-radius: 30px;
+    background: rgba(10,10,10,0.85);
+    border: 1px solid rgba(233,165,44,0.35);
+    color: #e9a52c;
+    font-family: monospace;
+    font-size: 11px;
+    letter-spacing: 2px;
+    z-index: 5;
+}
+
+
+/* ================= CONTENT ================= */
+
+.project-content {
+    position: relative;
+    z-index: 2;
+}
+
+.project-category {
+    display: inline-block;
+    padding: 9px 16px;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 30px;
+    color: #aaa;
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+
+.project-content h3 {
+    font-size: clamp(35px, 4vw, 58px);
+    line-height: 1;
+    margin: 0;
+}
+
+.project-content h4 {
+    color: #e9a52c;
+    font-size: 21px;
+    margin: 15px 0 25px;
+    font-weight: 500;
+}
+
+.project-content p {
+    color: #aaa;
+    font-size: 17px;
+    line-height: 1.75;
+    max-width: 550px;
+}
+
+.project-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+    margin-top: 28px;
+}
+
+.project-highlights span {
+    padding: 10px 14px;
+    border-radius: 25px;
+    background: rgba(28,181,177,0.13);
+    color: #55d4d0;
+    font-family: monospace;
+    font-size: 12px;
+}
+
+.project-arrow {
+    margin-top: 35px;
+    color: #eee;
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.project-arrow span {
+    color: #e9a52c;
+    font-size: 22px;
+    margin-left: 8px;
+}
+
+
+/* ================= STRESS PROJECT ================= */
+
+.project-stress {
+    grid-template-columns: 0.9fr 1.1fr;
+}
+
+.stress-visuals {
+    order: 2;
+}
+
+.project-stress .project-content {
+    order: 1;
+}
+
+.stress-image-main {
+    position: absolute;
+    width: 72%;
+    height: 390px;
+    right: 0;
+    top: 30px;
+    border-radius: 25px;
+    overflow: hidden;
+    transform: rotate(3deg);
+    border: 1px solid rgba(233,165,44,0.4);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+}
+
+.stress-image-small {
+    position: absolute;
+    width: 48%;
+    height: 250px;
+    left: 0;
+    bottom: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(-5deg);
+    border: 1px solid rgba(28,181,177,0.5);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+
+/* ================= ATTENDANCE ================= */
+
+.project-attendance {
+    grid-template-columns: 1.1fr 0.9fr;
+}
+
+.attendance-visuals {
+    height: 450px;
+}
+
+.attendance-image-one {
+    position: absolute;
+    width: 65%;
+    height: 390px;
+    left: 5%;
+    top: 25px;
+    border-radius: 25px;
+    overflow: hidden;
+    transform: rotate(-3deg);
+    border: 1px solid rgba(233,165,44,0.5);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.5);
+}
+
+.attendance-image-two {
+    position: absolute;
+    width: 47%;
+    height: 270px;
+    right: 0;
+    bottom: 5px;
+    border-radius: 20px;
+    overflow: hidden;
+    transform: rotate(5deg);
+    border: 1px solid rgba(28,181,177,0.5);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.floating-orbit {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 25%;
+    top: 25px;
+    border-radius: 50%;
+    border: 1px solid #e9a52c;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e9a52c;
+    font-family: monospace;
+    font-weight: bold;
+    z-index: 5;
+    box-shadow: 0 0 30px rgba(233,165,44,0.2);
+}
+
+
+/* ================= HOVER ================= */
+
+.creative-project {
+    transition: transform 0.5s ease, border-color 0.5s ease;
+}
+
+.creative-project:hover {
+    transform: translateY(-8px);
+    border-color: rgba(233,165,44,0.35);
+}
+
+.creative-project img {
+    transition: transform 0.7s ease;
+}
+
+.creative-project:hover img {
+    transform: scale(1.05);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 900px) {
+
+    .creative-projects {
+        padding: 80px 5vw;
+    }
+
+    .creative-project {
+        display: flex;
+        flex-direction: column;
+        padding: 55px 25px 35px;
+        gap: 40px;
+        min-height: auto;
+    }
+
+    .project-visuals,
+    .project-stress .stress-visuals,
+    .attendance-visuals {
+        width: 100%;
+        height: 380px;
+        order: 1;
+    }
+
+    .project-content,
+    .project-stress .project-content {
+        order: 2;
+        width: 100%;
+    }
+
+    .creative-project-header {
+        margin-bottom: 50px;
+    }
+
+    .dastaan-main-image,
+    .stress-image-main,
+    .attendance-image-one {
+        width: 72%;
+        height: 300px;
+    }
+
+    .dastaan-small-image,
+    .stress-image-small,
+    .attendance-image-two {
+        width: 43%;
+        height: 190px;
+    }
+
+    .dastaan-third-image {
+        display: none;
+    }
+
+    .project-content h3 {
+        font-size: 38px;
+    }
+
+}
+
+
+/* ================= SMALL MOBILE ================= */
+
+@media (max-width: 550px) {
+
+    .creative-projects {
+        padding: 65px 20px;
+    }
+
+    .creative-project {
+        border-radius: 25px;
+        padding: 45px 18px 30px;
+    }
+
+    .project-visuals,
+    .project-stress .stress-visuals,
+    .attendance-visuals {
+        height: 300px;
+    }
+
+    .dastaan-main-image,
+    .stress-image-main,
+    .attendance-image-one {
+        height: 240px;
+    }
+
+    .dastaan-small-image,
+    .stress-image-small,
+    .attendance-image-two {
+        height: 150px;
+    }
+
+    .project-content p {
+        font-size: 15px;
+    }
+
+}
