@@ -323,147 +323,208 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
-/* =====================================================
-   CREATIVE PROJECT POPUPS
-   ===================================================== */
+// ===============================
+// PROJECT FLASHCARD POPUP CONTENT
+// ===============================
 
-const projectDetails = {
+const projectFlashcards = {
 
-    /* ================= DASTAAN ================= */
-
-    "dastaan-main": {
-        title: "Dastaan — Brand Building Project",
-        text: "Dastaan was a brand-building project focused on transforming traditional Himachali apparel into a modern, appealing brand. The project involved brand building, team coordination, customer engagement, sales and business planning, ultimately generating ₹1,00,000+ in revenue."
+    // ---------------------------
+    // DASTAAN
+    // ---------------------------
+    "dastaan-idea": {
+        title: "🌱 THE IDEA",
+        text: "Built a modern brand around traditional Himachali apparel, turning local craftsmanship into a contemporary business concept."
     },
 
     "dastaan-role": {
-        title: "My Role",
-        text: "Worked as a Co-Founder, contributing to brand building, team coordination, customer engagement, sales activities and business planning."
+        title: "👥 MY ROLE",
+        text: "Worked as a Co-Founder, contributing to brand building, team coordination, customer engagement, sales and business planning."
     },
 
-    "dastaan-customers": {
-        title: "Customer Engagement",
-        text: "Focused on understanding customer preferences, communicating the value of Himachali products and building meaningful customer relationships."
+    "dastaan-journey": {
+        title: "🧩 THE JOURNEY",
+        text: "The project moved from an initial idea to branding, team coordination, customer engagement and finally sales."
     },
 
-    "dastaan-sales": {
-        title: "Sales Handling",
-        text: "Contributed to sales activities and customer interactions that helped the project generate ₹1,00,000+ in revenue."
-    },
-
-    "dastaan-vocal": {
-        title: "Vocal for Local",
-        text: "The project supported the Vocal for Local movement by promoting authentic Himachali products, local craftsmanship and locally made products."
+    "dastaan-stakeholders": {
+        title: "🤝 STAKEHOLDER RELATIONSHIPS",
+        text: "Focused on building positive relationships with customers, team members and other stakeholders involved in the business."
     },
 
     "dastaan-team": {
-        title: "Team Activities",
-        text: "Worked collaboratively with the team across branding, customer engagement, sales and business planning activities."
+        title: "👥 TEAM ACTIVITIES",
+        text: "Coordinated with the team to divide responsibilities, manage activities and keep the project moving towards its goals."
+    },
+
+    "dastaan-customers": {
+        title: "💬 CUSTOMER ENGAGEMENT",
+        text: "Interacted with customers to understand their preferences and create a better experience around traditional Himachali products."
+    },
+
+    "dastaan-sales": {
+        title: "📦 SALES HANDLING",
+        text: "Participated in sales activities and customer handling, helping convert the brand concept into actual business results."
     },
 
     "dastaan-planning": {
-        title: "Business Planning",
-        text: "Contributed to planning around branding, customer engagement, sales and overall business activities."
+        title: "📈 BUSINESS PLANNING",
+        text: "Worked on planning the brand, sales approach and business activities with a focus on sustainable growth."
+    },
+
+    "dastaan-vocal": {
+        title: "🇮🇳 VOCAL FOR LOCAL",
+        text: "The project supported the Vocal for Local idea by promoting authentic Himachali products and encouraging appreciation of local craftsmanship."
     },
 
 
-    /* ================= STRESS ================= */
+    // ---------------------------
+    // STRESS MANAGEMENT PROJECT
+    // ---------------------------
+    "stress-identify": {
+        title: "🔎 STEP 01 — IDENTIFY",
+        text: "Conducted a Training Needs Assessment with 10+ Anganwadi workers to understand the areas where training support was needed."
+    },
 
-    "stress-main": {
-        title: "Stress Management & Employee Well-Being",
-        text: "This project followed a complete HR training journey — identifying needs through a Training Needs Assessment, understanding workplace challenges, designing a well-being program and delivering interactive activities and practical coping techniques to 10+ Anganwadi workers."
+    "stress-understand": {
+        title: "🧠 STEP 02 — UNDERSTAND",
+        text: "Identified stress-related challenges and understood the practical training requirements of the participants."
+    },
+
+    "stress-design": {
+        title: "🎯 STEP 03 — DESIGN",
+        text: "Designed a Stress Management & Employee Well-Being program based on the needs identified during the assessment."
+    },
+
+    "stress-deliver": {
+        title: "🎲 STEP 04 — DELIVER",
+        text: "Delivered the session using interactive activities and practical coping techniques to make the learning experience engaging."
     },
 
     "stress-tna": {
-        title: "Training Needs Assessment",
-        text: "Conducted a Training Needs Assessment with 10+ Anganwadi workers to understand their training and workplace well-being requirements."
+        title: "📋 TRAINING NEEDS ASSESSMENT",
+        text: "Used a Training Needs Assessment to identify the specific learning and well-being requirements of the participants."
     },
 
     "stress-engagement": {
-        title: "Employee Engagement",
-        text: "Focused on engaging participants through interactive activities and practical learning rather than relying only on theoretical training."
+        title: "👥 EMPLOYEE ENGAGEMENT",
+        text: "Focused on active participation and interaction so that workers could connect the training concepts with their everyday experiences."
     },
 
     "stress-facilitation": {
-        title: "Facilitation",
-        text: "Supported the delivery of interactive training activities designed around stress management and employee well-being."
+        title: "🎤 FACILITATION",
+        text: "Facilitated the training session by guiding activities, encouraging participation and creating an interactive learning environment."
     },
 
     "stress-communication": {
-        title: "Communication",
-        text: "Used communication and interactive learning techniques to make the training accessible and engaging for participants."
+        title: "💬 COMMUNICATION",
+        text: "Used clear and practical communication to explain stress management concepts and make the session easy to understand."
     },
 
     "stress-wellbeing": {
-        title: "Workplace Well-Being",
-        text: "The project focused on practical stress-management approaches and creating greater awareness around employee well-being."
+        title: "💚 WORKPLACE WELL-BEING",
+        text: "The program focused on practical ways to manage stress and promote better emotional well-being at work."
     },
 
 
-    /* ================= ATTENDANCE APP ================= */
-
-    "app-main": {
-        title: "Golden Oak Shimla — HR Attendance App",
-        text: "Analyzed HR attendance processes and workflows and transformed the problem of manual attendance management into a digital attendance solution. The application was successfully sold for ₹18,000."
+    // ---------------------------
+    // HR ATTENDANCE APP
+    // ---------------------------
+    "app-problem": {
+        title: "⚠️ THE PROBLEM",
+        text: "The project addressed the inefficiencies of manual attendance management and the difficulties involved in maintaining accurate attendance records."
     },
 
-    "app-hr": {
-        title: "HR Operations",
-        text: "The project focused on understanding HR operations and how attendance management fits into everyday HR workflows."
+    "app-analysis": {
+        title: "🔍 WHAT I ANALYZED",
+        text: "Analyzed HR operations, attendance processes and existing workflows to understand where a digital solution could improve efficiency."
     },
 
-    "app-attendance": {
-        title: "Attendance Management",
-        text: "The application was designed to make attendance management more organized and efficient through a digital approach."
+    "app-solution": {
+        title: "💻 THE SOLUTION",
+        text: "Developed a digital HR attendance management solution designed to make attendance tracking and data management more efficient."
     },
 
-    "app-workflow": {
-        title: "Workflow Analysis",
-        text: "Analyzed existing attendance-related workflows to identify opportunities for a more efficient digital process."
+    "app-efficiency": {
+        title: "⚡ OPERATIONAL EFFICIENCY",
+        text: "The digital approach helped simplify attendance-related workflows and reduce the effort involved in managing records."
     },
 
-    "app-digital": {
-        title: "Digital Transformation",
-        text: "Converted a manual HR process into a digital solution, supporting improved operational efficiency, data management and attendance accuracy."
+    "app-data": {
+        title: "📊 DATA MANAGEMENT",
+        text: "The solution improved the organization and accessibility of attendance information for easier HR record management."
+    },
+
+    "app-accuracy": {
+        title: "🎯 ATTENDANCE ACCURACY",
+        text: "A structured digital system helped improve the consistency and accuracy of attendance records."
+    },
+
+    "app-transformation": {
+        title: "💡 DIGITAL TRANSFORMATION",
+        text: "The project demonstrated how an everyday HR process can be converted into a practical digital solution through process analysis and stakeholder coordination."
     }
-
 };
 
 
-function openProject(projectId) {
+// ===============================
+// POPUP FUNCTION
+// ===============================
 
-    const project = projectDetails[projectId];
+const popup = document.getElementById("projectPopup");
+const popupTitle = document.getElementById("popupTitle");
+const popupText = document.getElementById("popupText");
+const popupClose = document.getElementById("popupClose");
 
-    if (!project) return;
 
-    document.getElementById("popupTitle").textContent =
-        project.title;
+// Open popup when a flashcard is clicked
+document.addEventListener("click", function (event) {
 
-    document.getElementById("popupText").textContent =
-        project.text;
+    const card = event.target.closest("[data-popup]");
 
-    document.getElementById("projectPopup")
-        .classList.add("active");
+    if (!card) return;
 
-    document.body.style.overflow = "hidden";
+    const popupKey = card.getAttribute("data-popup");
+    const content = projectFlashcards[popupKey];
+
+    if (!content) return;
+
+    popupTitle.textContent = content.title;
+    popupText.textContent = content.text;
+
+    popup.classList.add("active");
+    document.body.classList.add("popup-open");
+});
+
+
+// Close popup
+if (popupClose) {
+    popupClose.addEventListener("click", function () {
+        popup.classList.remove("active");
+        document.body.classList.remove("popup-open");
+    });
 }
 
 
-function closeProject() {
+// Close when clicking outside popup
+if (popup) {
+    popup.addEventListener("click", function (event) {
 
-    document.getElementById("projectPopup")
-        .classList.remove("active");
+        if (event.target === popup) {
+            popup.classList.remove("active");
+            document.body.classList.remove("popup-open");
+        }
 
-    document.body.style.overflow = "";
+    });
 }
 
 
-/* Close popup using ESC */
-
-document.addEventListener("keydown", function(event) {
+// Close with ESC key
+document.addEventListener("keydown", function (event) {
 
     if (event.key === "Escape") {
-        closeProject();
+        popup.classList.remove("active");
+        document.body.classList.remove("popup-open");
     }
 
 });
