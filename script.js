@@ -323,3 +323,147 @@ document.addEventListener("keydown", function(event) {
     }
 
 });
+/* =====================================================
+   CREATIVE PROJECT POPUPS
+   ===================================================== */
+
+const projectDetails = {
+
+    /* ================= DASTAAN ================= */
+
+    "dastaan-main": {
+        title: "Dastaan — Brand Building Project",
+        text: "Dastaan was a brand-building project focused on transforming traditional Himachali apparel into a modern, appealing brand. The project involved brand building, team coordination, customer engagement, sales and business planning, ultimately generating ₹1,00,000+ in revenue."
+    },
+
+    "dastaan-role": {
+        title: "My Role",
+        text: "Worked as a Co-Founder, contributing to brand building, team coordination, customer engagement, sales activities and business planning."
+    },
+
+    "dastaan-customers": {
+        title: "Customer Engagement",
+        text: "Focused on understanding customer preferences, communicating the value of Himachali products and building meaningful customer relationships."
+    },
+
+    "dastaan-sales": {
+        title: "Sales Handling",
+        text: "Contributed to sales activities and customer interactions that helped the project generate ₹1,00,000+ in revenue."
+    },
+
+    "dastaan-vocal": {
+        title: "Vocal for Local",
+        text: "The project supported the Vocal for Local movement by promoting authentic Himachali products, local craftsmanship and locally made products."
+    },
+
+    "dastaan-team": {
+        title: "Team Activities",
+        text: "Worked collaboratively with the team across branding, customer engagement, sales and business planning activities."
+    },
+
+    "dastaan-planning": {
+        title: "Business Planning",
+        text: "Contributed to planning around branding, customer engagement, sales and overall business activities."
+    },
+
+
+    /* ================= STRESS ================= */
+
+    "stress-main": {
+        title: "Stress Management & Employee Well-Being",
+        text: "This project followed a complete HR training journey — identifying needs through a Training Needs Assessment, understanding workplace challenges, designing a well-being program and delivering interactive activities and practical coping techniques to 10+ Anganwadi workers."
+    },
+
+    "stress-tna": {
+        title: "Training Needs Assessment",
+        text: "Conducted a Training Needs Assessment with 10+ Anganwadi workers to understand their training and workplace well-being requirements."
+    },
+
+    "stress-engagement": {
+        title: "Employee Engagement",
+        text: "Focused on engaging participants through interactive activities and practical learning rather than relying only on theoretical training."
+    },
+
+    "stress-facilitation": {
+        title: "Facilitation",
+        text: "Supported the delivery of interactive training activities designed around stress management and employee well-being."
+    },
+
+    "stress-communication": {
+        title: "Communication",
+        text: "Used communication and interactive learning techniques to make the training accessible and engaging for participants."
+    },
+
+    "stress-wellbeing": {
+        title: "Workplace Well-Being",
+        text: "The project focused on practical stress-management approaches and creating greater awareness around employee well-being."
+    },
+
+
+    /* ================= ATTENDANCE APP ================= */
+
+    "app-main": {
+        title: "Golden Oak Shimla — HR Attendance App",
+        text: "Analyzed HR attendance processes and workflows and transformed the problem of manual attendance management into a digital attendance solution. The application was successfully sold for ₹18,000."
+    },
+
+    "app-hr": {
+        title: "HR Operations",
+        text: "The project focused on understanding HR operations and how attendance management fits into everyday HR workflows."
+    },
+
+    "app-attendance": {
+        title: "Attendance Management",
+        text: "The application was designed to make attendance management more organized and efficient through a digital approach."
+    },
+
+    "app-workflow": {
+        title: "Workflow Analysis",
+        text: "Analyzed existing attendance-related workflows to identify opportunities for a more efficient digital process."
+    },
+
+    "app-digital": {
+        title: "Digital Transformation",
+        text: "Converted a manual HR process into a digital solution, supporting improved operational efficiency, data management and attendance accuracy."
+    }
+
+};
+
+
+function openProject(projectId) {
+
+    const project = projectDetails[projectId];
+
+    if (!project) return;
+
+    document.getElementById("popupTitle").textContent =
+        project.title;
+
+    document.getElementById("popupText").textContent =
+        project.text;
+
+    document.getElementById("projectPopup")
+        .classList.add("active");
+
+    document.body.style.overflow = "hidden";
+}
+
+
+function closeProject() {
+
+    document.getElementById("projectPopup")
+        .classList.remove("active");
+
+    document.body.style.overflow = "";
+}
+
+
+/* Close popup using ESC */
+
+document.addEventListener("keydown", function(event) {
+
+    if (event.key === "Escape") {
+        closeProject();
+    }
+
+});
